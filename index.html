@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea número 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header container">
+      <nav class="header__navegation">
+        <a class="logo" href="#">Web Studio</a>
+        <ul class="header-navegation__list">
+          <li class="header-navegation__items">
+            <a class="header-navegation__links header-navegation__links--active" href="./index.html"
+              >Estudio</a>
+          </li>
+          <li class="header-navegation__items">
+            <a class="header-navegation__links" href="./portfolio.html">Portafolio</a>
+          </li>
+          <li class="header-navegation__items">
+            <a class="header-navegation__links" href="#">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header__list">
+        <li class="header__items">
+          <a class="header__link" 
+          href="mailto:info@devstudio.com">
+          <svg class="icon-header">
+            <use
+              class="email"
+              href="./img/icons/symbol-defs.svg#icon-headersobre"
+            ></use>
+          </svg>
+          info@devstudio.com </a>
+        </li>
+
+        <li class="header__items">
+          <a class="header__link" href="tel:+38 096 111 11 11">
+            <svg class="icon-cel">
+              <use
+                href="./img/icons/symbol-defs.svg#icon-headertelfonointeligente"
+              ></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <id="main" class="main">
+      <section class="main-section">
+        <div class="container">
+          <h1 class="main__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+
+          <div class="main__div">
+            <button class="mainbutton" type="button" data-modal-open>
+              Solicite nuestro servicio
+            </button>
+          </div>
+
+          <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class="div-boton-modal">
+            <button class="botón-modal" type="button" data-modal-close>
+              <svg class="icon-modal" width="18" height="18">
+                <use class="x-icon" href="./img/icons/X.svg#iconXclose-black-18dp-2-1">
+                </use>
+              </svg>
+            </button>
+          </div>
+            
+          <form name="nombre-formulario" action="" class="formulario-modal" autocomplete="on" novalidate>
+            <h3 class="text-modal-formulario">Deje sus datos, nos contactaremos con usted</h3>
+            <div class="div-formulario-modal">
+            <label for="input1" class="label-modal">Nombre</label>
+            <input type="text" id="input1" class="input-modal form-input" required>
+            <svg class="icon-persona-negra" width=18 height="18">
+                <use href="./img/icons/formulario.svg#iconboletinpersona-negra-18dp-1"></use>
+            </svg>
+          </div>
+
+          <div class="div-formulario-modal">
+            <label for="input2" class="label-modal">Teléfono</label>
+            <input type="tel" id="input2" class="form-input input-modal" required>
+            <svg class="icon-persona-negra" width=18 height="18">
+              <use href="./img/icons/formulario.svg#iconboletintelfono-negro-18dp-1"></use>
+          </svg>
+          </div>
+          <div class="div-formulario-modal">
+            <label for="input3"  class="label-modal">E-mail</label>
+            <input type="email" id="input3" class="form-input input-modal" required>
+            <svg class="icon-persona-negra" width=18 height="18">
+              <use href="./img/icons/formulario.svg#iconboletincorreo-electrnico-negro-18dp-1"></use>
+          </svg>
+          </div>
+        <div class="textarea">
+          <p class="label-modal">Comentarios</p>
+          <textarea  class="area" 
+          name="" 
+          id="textarea-id" 
+          cols="30" 
+          rows="10"
+          placeholder="Introduzca el texto"></textarea>
+        </div>
+        <label class="terms">
+          <input hidden class="checkbox" type="checkbox">
+          <svg class="checkbox-unchecked">
+            <use href="./img/icons/checkicons.svg#iconboletinVector"></use>
+          </svg>
+          <svg class="checkbox-checked">
+            <use href="./img/icons/checkicons.svg#iconboletincono-revisado"></use>
+          </svg>
+          <p class="checktext">
+          Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+        </label>
+        <!-- <div class="checkbox-modal">
+          <label for="input4"></label>
+          <input type="checkbox" id="input4" class="form-input" required>
+          <p class="parrafo-checkbox">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+        </div> -->
+        <div class="div-formulario-modalbutton">
+        <button type="submit" class="button-formulario-modal">Enviar</button>
+      </div>
+          </form>
+         </div>
+         </div>
+          </div>
+        </div>
+</section>
+
+      <section id="charact" class="container-section container">
+        <ul class="list flex-services p-0">
+          <li class="items">
+            <div class="div-icon">
+              <svg class="lienzo-services" width="70">
+                <use
+                  class="iconmain"
+                  href="./img/icons/symbol-defsMain.svg#icon-Mainantena"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="subtitle">ATENCIÓN A LOS DETALLES</h3>
+            <p class="parrafo">
+              Nos adentramos en todos los detalles y procesos de su negocio,
+              para así desarrollar una solución a su medida.
+            </p>
+          </li>
+          <li class="items">
+            <div class="div-icon">
+              <svg class="lienzo-services" width="70">
+                <use
+                  class="iconmain"
+                  href="./img/icons/symbol-defsMain.svg#icon-Mainreloj"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="subtitle-dos">PUNTUALIDAD</h3>
+            <p class="parrafo">
+              Con nosotros, usted puede sentirse seguro y protegido. Un
+              principio importante de la empresa: respetar su tiempo y respetar
+              los plazos acordados.
+            </p>
+          </li>
+          <li class="items">
+            <div class="div-icon">
+              <svg class="lienzo-services" width="70">
+                <use
+                  class="iconmain"
+                  href="./img/icons/symbol-defsMain.svg#icon-Maindiagrama"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="subtitle">PLANIFICACIÓN</h3>
+            <p class="parrafo">
+              Usted podrá observar y participar en cada fase del desarrollo y
+              aplicación de soluciones.
+            </p>
+          </li>
+          <li class="items">
+            <div class="div-icon">
+              <svg class="lienzo-services" width="70">
+                <use
+                  class="iconmain"
+                  href="./img/icons/symbol-defsMain.svg#icon-Mainastronauta"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="subtitle">TECNOLOGÍA MODERNA</h3>
+            <p class="parrafo">
+              Usamos herramientas innovadoras para resolver las tareas
+              asignadas. Es hora de simplificar los procesos laborales.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="mision" class="container section">
+        <div class="container-mision">
+          <h2 class="sub">A qué nos dedicamos</h2>
+        </div>
+        
+        <ul class="mision-list flex-mision">
+          <li class="mision-items">
+
+            <div class="imagen-container">
+            <img src="./img/1.jpg" alt="Imagen 1" width="373" height="323"/>
+            <p class="text-absolute">APLICACIONES DE ESCRITORIO</p>
+           </div>
+
+          </li>
+          <li class="mision-items">
+
+            <div class="imagen-container">
+            <img src="./img/2.jpg" alt="Imagen 2" width="373" height="323" />
+            <p class="text-absolute">APLICACIONES MÓVILES</p>
+          </div>
+
+          </li>
+          <li class="mision-items">
+
+            <div class="imagen-container">
+            <img src="./img/3.jpg" alt="Imagen 3" width="373" height="323" />
+            <p class="text-absolute">SOLUCIONES DE DISEÑO</p>
+          </div>
+
+          </li>
+        </ul>
+
+      </section>
+      <section id="team" class="section section-team">
+        <div class="container">
+          <div class="container-team">
+            <h2 class="sub">Nuestro equipo</h2>
+          </div>
+          
+          <ul class="teamlist-card flex-card">
+            <li class="teamitem-card">
+              <img
+                src="./img/Equipo1.jpg"
+                alt="Tarjeta del quipo 1"
+                width="270"
+                height="260"
+              />
+              <h3 class="subname">Andrés Cubo</h3>
+              <p class="parrafod">Diseñador de productos</p>
+              <ul class="list-logo">
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+       <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Maininstagram"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                  <use 
+                    href="./img/icons/symbol-defsMain.svg#icon-Maintwitter"
+                  ></use>
+                </svg>
+              </a>
+              </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainfacebook"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank"></href>
+                  <svg width="20" height="20">
+                    <use 
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainlinkedin"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+              </ul>
+            </li>
+            <li class="teamitem-card">
+              <img
+                src="./img/equipo2.jpg"
+                alt="Tarjeta del equipo 2"
+                width="270"
+                height="260"
+              />
+              <h3 class="subname">Carla Palacios</h3>
+              <p class="parrafod">Desarrolladora Frontend</p>
+              <ul class="list-logo">
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+       <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Maininstagram"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-Maintwitter"
+                  ></use>
+                </svg>
+              </a>
+              </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainfacebook"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank"></href>
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainlinkedin"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+              </ul>
+            </li>
+          
+
+            <li class="teamitem-card">
+              <img
+                src="./img/equipo3.jpg"
+                alt="Tarjeta del equipo 3"
+                width="270"
+                height="260"
+              />
+              <h3 class="subname">Mario Dorado</h3>
+              <p class="parrafod">Marketing</p>
+              <ul class="list-logo">
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+       <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Maininstagram"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-Maintwitter"
+                  ></use>
+                </svg>
+              </a>
+              </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainfacebook"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank"></href>
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainlinkedin"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+              </ul>
+            </li>
+            <li class="teamitem-card">
+              <img
+                src="./img/equipo4.jpg"
+                alt="Tarjeta del equipo 4"
+                width="270"
+                height="260"
+              />
+              <h3 class="subname">Pablo Mijangos</h3>
+              <p class="parrafod">Diseñador IU</p>
+              <ul class="list-logo">
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Maininstagram"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-Maintwitter"
+                  ></use>
+                </svg>
+              </a>
+              </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank">
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainfacebook"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="item-logo">
+                  <a href="#" class="icons-links" rel="noopener noreffer" target="_blank"></href>
+                  <svg width="20" height="20">
+                    <use
+                      href="./img/icons/symbol-defsMain.svg#icon-Mainlinkedin"
+                    ></use>
+                  </svg>
+                </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-clientes">
+        <div class="container">
+          <h2 class="sub clientes">Clientes regulares</h2>
+          <ul class="list-clientes">
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-MainLogo"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-MainLogo1"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-MainLogo2"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use href="./img/icons/grupo.svg#icon-Maingrupo"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-MainLogo3"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item-clientes">
+              <div class="div-clientes">
+                <svg width="106" height="52.826">
+                  <use
+                    href="./img/icons/symbol-defsMain.svg#icon-MainLogo4"
+                  ></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <address class="footer">
+        <div class="container foot">
+          <ul class="info-list">
+            <li class="info-item">
+              <a class="logo" href="#">Web Studio</a>
+            </li>
+            <li class="info">
+              <a
+                class="link-foot"
+                href="https://goo.gl/maps/L9u1Q98ZNXVA683N9"
+                rel="nopener noreffer"
+                target="blank"
+                >Calz. Ticomán 500, Ciudad de <br>
+                México, CDMX, México"></br></a
+              >
+            </li>
+            <li class="info">
+              <a class="link-footer" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="info">
+              <a class="link-footer" href="tel:+525555296000">+525555296000</a>
+            </li>
+          </ul>
+          <div class="footer-div">
+          <h3 class="footer-item">ENCUENTRANOS EN</h3>
+            <ul class="contact-footer">
+            <li class="footer-items">
+              <a href="#" class="icons-footer" rel="noopener noreffer" target="_blank">
+                <svg width="20" height="20">
+                  <use
+                    class="iconmain"
+                    href="./img/icons/symbol-defsMain.svg#icon-Maininstagram"
+                  ></use>
+                </svg>
+              </a>
+                <li>
+                  <a href="#" class="icons-footer" rel="noopener noreffer" target="_blank">
+                <svg width="20" height="20">
+                  <use
+                    class="iconmain"
+                    href="./img/icons/symbol-defsMain.svg#icon-Maintwitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+                <li> 
+                  <a href="#" class="icons-footer" rel="noopener noreffer" target="_blank">
+                <svg width="20" height="20">
+                  <use
+                    class="iconmain"
+                    href="./img/icons/symbol-defsMain.svg#icon-Mainfacebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+                <li>
+                  <a href="#" class="icons-footer" rel="noopener noreffer" target="_blank">
+                <svg width="20" height="20">
+                  <use
+                    class="iconmain"
+                    href="./img/icons/symbol-defsMain.svg#icon-Mainlinkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="formulario">
+          <h3 class="formulario-text">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+           <form name="formulario-footer" action="" autocomplete="on" class="formulario1" novalidate>
+          <div class="div-formulario">
+             
+                <label for="inputCorreo" class="label-formulario1"></label>
+                <input type="text" id="inputCorreo" placeholder="Correo electrónico" class="correo-formulario1">
+             
+
+              <button type="submit" class="button_formulario">
+                <p class="input-formulario-parrafo">suscríbase</p>
+                <svg width="24" height="24">
+                  <use
+                  class="iconmain"
+                  href="./img/icons/formulario.svg#iconboletinenviar-cono-1"
+                >
+              </use>
+                </svg>
+              </button>
+            </div>
+             </form>
+              <!-- <form action="" class="formulario2">
+                <label for="inputsuscripción" class="label-formulario2">suscríbase
+                  <svg width="24" height="24">
+                    <use
+                    class="iconmain"
+                    href="./img/icons/formulario.svg#iconboletinenviar-cono-1"
+                  >
+                </use>
+                  </svg>
+                </label>
+                <input type="text" id="inputsuscripción" class="input-formulario">
+              </form> -->
+            
+            
+        </div>
+
+        </div>
+      </address>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
