@@ -155,7 +155,7 @@ color: rgb(33, 150, 243);
   text-align: left;
   font-size: 16px;
 }
-.sub {
+.title {
   color: rgb(33, 33, 33);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -164,7 +164,7 @@ color: rgb(33, 150, 243);
   text-align: center;
   font-size: 36px;
 }
-.sub.clientes {
+.title.clientes {
   padding-top: 59px;
   padding-bottom: 44px;
 }
@@ -367,10 +367,10 @@ letter-spacing: 0.96px;
   padding: 0px;
   column-gap: 30px;
 }
-.container-mision {
+/* .container-mision {
   padding-top: 94px;
   padding-bottom: 55px;
-}
+} */
 .container-team {
   padding-top: 118px;
   padding-bottom: 50px;
@@ -395,7 +395,7 @@ letter-spacing: 0.96px;
 .p-0 {
   padding-top: 0px;
 }
-.container-mision {
+.services {
   padding-top: 94px;
   padding-bottom: 55px;
 }
