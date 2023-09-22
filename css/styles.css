@@ -388,7 +388,7 @@ letter-spacing: 0.96px;
   padding-top: 30px;
   padding-bottom: 200px;
 } */
-.items {
+.characteristics__items {
   padding-top: 95px;
   list-style: none;
 }
@@ -434,7 +434,7 @@ letter-spacing: 0.96px;
   padding-top: 30px;
   padding-bottom: 200px;
 }
-.flex-services {
+.characteristics {
   display: flex;
   gap: 30px;
 }
