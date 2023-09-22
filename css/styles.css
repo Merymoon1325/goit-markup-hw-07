@@ -127,7 +127,7 @@ color: rgb(33, 150, 243);
   text-align: left;
   font-size: 14px;
 }
-.subtitle-dos {
+.subtitle--gris {
   color: rgb(117, 117, 117);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -437,6 +437,7 @@ letter-spacing: 0.96px;
 .characteristics {
   display: flex;
   gap: 30px;
+  padding-left: 0;
 }
 .flex-mision {
   display: flex;
