@@ -72,10 +72,10 @@ color: rgb(33, 150, 243);
   display: flex;
   align-items: center;
 }
-.mision-list {
+/* .mision-list {
   list-style: none;
   padding: 0px;
-}
+} */
 .teamlist-card {
   list-style: none;
   padding: 0px;
@@ -439,9 +439,11 @@ letter-spacing: 0.96px;
   gap: 30px;
   padding-left: 0;
 }
-.flex-mision {
+.services__list {
   display: flex;
   gap: 30px;
+  list-style: none;
+  padding: 0px;
 }
 .flex-card {
   display: flex;
@@ -732,11 +734,11 @@ height: 120px;
   display: flex;
   flex-direction: column;
 }
-.imagen-container {
+.services__tarjeta {
   position: relative;
   overflow: hidden;
 }
-.text-absolute {
+.services__text {
   bottom: 1%;
   position: absolute;
   width: 373px;
