@@ -16,20 +16,20 @@
   color: currentColor;
   text-decoration: none;
 }
-.header__items:hover .icon-header {
+.header__items:hover .header-icon__email {
   fill: rgb(33, 150, 243);
 }
-.header__items:hover .icon-cel {
+.header__items:hover .header-icon__tel {
   fill: rgb(33, 150, 243);
 }
 .header__items:hover .header__link {
   color: rgb(33, 150, 243);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__items:focus .icon-header {
+.header__items:focus .header-icon__email {
   fill: rgb(33, 150, 243);
 }
-.header__items:focus .icon-cel {
+.header__items:focus .header-icon__tel {
   fill: rgb(33, 150, 243);
 }
 .header__items:focus .header__link {
@@ -479,12 +479,12 @@ letter-spacing: 0.96px;
 .header-navegation__links {
   color: rgb(33, 150, 243);
 }
-.icon-header{
+.header-icon__email{
   width: 16px;
   height: 12px;
   fill: #757575;
 }
-.icon-cel {
+.header-icon__tel {
   width: 10px;
   height: 16px;
   fill: rgb(117, 117, 117);
