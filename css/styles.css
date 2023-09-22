@@ -853,7 +853,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
 }
-.input-modal {
+.modal__input {
   width: 448px;
 height: 40px;
 border-radius: 4px;
@@ -861,14 +861,14 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 margin-bottom: 10px;
 padding-left: 40px;
 }
-.input-modal:focus-visible {
+.modal__input:focus-visible {
   outline: none;
 }
-.input-modal:focus {
+.modal__input:focus {
   border-color: #2196F3;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-.input-modal:focus + .icon-persona-negra {
+.modal__input:focus + .persona {
 fill: #2196F3;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -879,7 +879,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .area:focus-visible {
 outline: none;
 }
-.icon-persona-negra {
+.persona {
   position: absolute;
   top:44%;
   left: 12px;
@@ -925,7 +925,7 @@ line-height: 24px; 171.429%
 letter-spacing: 0.42px;
 margin-top: 24px;
 } */
-.label-modal {
+.modal__label {
   color: #757575;
 font-family: Roboto;
 font-size: 12px;
@@ -959,11 +959,11 @@ cursor: pointer;
 .correo-formulario1 {
   padding-left: 16px;
 }
-.form-input:not(:placeholder-shown):required:valid {
+/* .form-input:not(:placeholder-shown):required:valid {
  outline: none;
  border: 1px solid rgb(33, 150, 243);
  transition: 0.3s;
-}
+} */
 .terms {
   position: relative;
   cursor: pointer;
