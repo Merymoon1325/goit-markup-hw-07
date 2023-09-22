@@ -76,7 +76,9 @@ color: rgb(33, 150, 243);
   list-style: none;
   padding: 0px;
 } */
-.teamlist-card {
+.team__list {
+  display: flex;
+  gap: 30px;
   list-style: none;
   padding: 0px;
 }
@@ -146,14 +148,14 @@ color: rgb(33, 150, 243);
   font-size: 14px;
   padding-top: 10px;
 }
-.parrafod {
+.team__parrafo {
   color: rgb(117, 117, 117);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
   font-size: 16px;
+  text-align: center;
 }
 .title {
   color: rgb(33, 33, 33);
@@ -168,7 +170,7 @@ color: rgb(33, 150, 243);
   padding-top: 59px;
   padding-bottom: 44px;
 }
-.subname {
+.team__name {
   color: rgb(33, 33, 33);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -288,19 +290,19 @@ letter-spacing: 0.96px;
   margin: 0 auto;
   padding: 0 15px;
 }
-.teamlist-card .teamitem-card {
+.team__list .team__item {
   width: 270px;
   height: 450px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
 }
-.teamlist-card .teamitem-card:hover {
+.team__list .team__item:hover {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.parrafod {
+/* .parrafod {
   text-align: center;
-}
+} */
 .img-section .img-item {
   width: 370px;
   height: 404px;
@@ -371,11 +373,11 @@ letter-spacing: 0.96px;
   padding-top: 94px;
   padding-bottom: 55px;
 } */
-.container-team {
+.team__container {
   padding-top: 118px;
   padding-bottom: 50px;
 }
-.teamlist-card.flex {
+.team__list.flex {
   padding-bottom: 94px;
 }
 .main-section .container {
@@ -399,10 +401,10 @@ letter-spacing: 0.96px;
   padding-top: 94px;
   padding-bottom: 55px;
 }
-.container-team {
+/* .container-team {
   padding-top: 188px;
   padding-bottom: 50px;
-}
+} */
 .img-section.flex {
   flex-wrap: wrap;
 }
@@ -445,11 +447,11 @@ letter-spacing: 0.96px;
   list-style: none;
   padding: 0px;
 }
-.flex-card {
+/* .flex-card {
   display: flex;
   gap: 30px;
-}
-.section-team {
+} */
+.team {
   background-color: rgb(245, 244, 250);
   padding-bottom: 94px;
 }
@@ -580,7 +582,7 @@ padding: 14px 32px 14px 32px;
   background-color: #2196F3;
   border-radius: 50%;
 }
-.list-logo {
+.team__logo {
   display: flex;
   padding-top: 28px;
   align-items: center;
@@ -593,10 +595,10 @@ padding: 14px 32px 14px 32px;
   height: 44px; 
   margin-top: 16px;
 }
-.item-logo {
+/* .item-logo {
   justify-content: center;
   align-items: center;
-}
+} */
 .icons-links {
   display: flex;
   justify-content: center;
