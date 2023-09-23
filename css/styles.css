@@ -180,9 +180,11 @@ color: rgb(33, 150, 243);
   padding-top: 30px;
   padding-bottom: 10px;
 }
-.info-list {
+.contact__list {
   background-color: #2f303a;
   list-style: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
   gap: 70px;
 }
 .info .link-foot {
@@ -455,7 +457,7 @@ letter-spacing: 0.96px;
   background-color: rgb(245, 244, 250);
   padding-bottom: 94px;
 }
-.footer {
+.contact {
   background-color: rgb(47, 48, 58);
 }
 .contact-footer {
@@ -477,10 +479,10 @@ letter-spacing: 0.96px;
 .button {
   padding: 8px 16px;
 }
-.info-list {
+/* .info-list {
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 .header-navegation__links {
   color: rgb(33, 150, 243);
 }
