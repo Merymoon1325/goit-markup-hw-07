@@ -460,7 +460,7 @@ letter-spacing: 0.96px;
 .contact {
   background-color: rgb(47, 48, 58);
 }
-.contact-footer {
+.redes__list {
   display: flex;
   list-style: none;
   padding: 0px;
@@ -504,7 +504,7 @@ letter-spacing: 0.96px;
   gap: 70px;
   align-items: center;
 }
-.footer-items {
+.redes__items {
 display: flex;
  font-family: "Roboto", sans-serif;
  font-size: 14px;
@@ -570,12 +570,12 @@ padding: 14px 32px 14px 32px;
   border-color: var(--brand-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-div {
+.redes {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.icons-footer {
+/* .icons-footer {
   display: flex;
   width: 44px;
   height: 44px;
@@ -583,7 +583,7 @@ padding: 14px 32px 14px 32px;
   justify-content: center;
   background-color: #2196F3;
   border-radius: 50%;
-}
+} */
 .team__logo {
   display: flex;
   padding-top: 28px;
@@ -720,7 +720,7 @@ height: 24px
 .bottom-formulario {
   margin-top: 30px;
 }
-.formulario-text {
+.boletin__text {
 color: #FFF;
 font-family: Roboto;
 font-size: 14px;
@@ -804,12 +804,12 @@ cursor: auto;
 border-radius: 2px;
 }
 
-.formulario {
+.boletin {
   display: flex;
   flex-direction: column;
   gap: 10px;
  }
-.formulario1 {
+.formulario {
   display: flex;
 }
 .button_formulario {
@@ -840,12 +840,12 @@ border: 1px solid rgba(255, 255, 255, 0.30);
 background: rgba(33, 150, 243, 0.00);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.formulario {
+/* .formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.div-formulario {
+} */
+.div__formulario {
   display: flex;
 }
 .modal__formulario {
