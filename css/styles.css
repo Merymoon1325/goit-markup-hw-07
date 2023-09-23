@@ -210,7 +210,7 @@ color: rgb(33, 150, 243);
 * {
   font-family: "Roboto", sans-serif;
 }
-.button {
+.menu__button {
   color: rgb(33, 33, 33);
   background-color: rgb(245, 244, 250);
   border: none;
@@ -220,6 +220,7 @@ color: rgb(33, 150, 243);
   font-size: 16px;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  padding: 8px 16px;
 }
 .button-formulario{
   width: 200px;
@@ -236,16 +237,16 @@ font-weight: 700;
 line-height: 30px; 
 letter-spacing: 0.96px;
 }
-.button.todo {
+.menu__button--blue {
   background-color: rgb(33, 150, 243);
   color: rgb(255, 255, 255);
 }
-.button:hover {
+.menu__button:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:focus {
+.menu__button:focus {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -278,12 +279,13 @@ letter-spacing: 0.96px;
 .filethree {
   list-style: none;
 }
-.principal-list {
-  display: flex;
+/* .principal-list {
   list-style: none;
   justify-content: center;
-  gap: 8px;
-}
+  display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
+} */
 /* .main-section {
   background-color: rgb(47, 48, 58);
 } */
@@ -325,10 +327,12 @@ letter-spacing: 0.96px;
   align-items: center;
   gap: 50px;
 }
-.flexp {
- display: flex;
- flex-wrap: wrap;
- gap: 30px;
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 30px; 
 }
 .img-item {
   flex-basis: calc((100% - 60px) / 3);
@@ -413,13 +417,13 @@ letter-spacing: 0.96px;
 .basis {
   flex-basis: calc(100% - 128px / 5);
 }
-.principal-list.flex {
+/* .principal-list.flex {
   padding: 0px;
-}
+} */
 .img-section.flex {
   padding: 0px;
 }
-.principal-item {
+.menu__item {
   padding-top: 106px;
   padding-bottom: 50px;
 }
@@ -466,19 +470,19 @@ letter-spacing: 0.96px;
   padding: 0px;
   gap: 10px;
 }
-.img-section .flexp {
+/* .img-section .flexp {
   padding: 0px;
-}
-.principal-section .container{
+} */
+.ppal__section .container{
   padding: 0px;
 }
 .img-section {
   padding: 0px;
   padding-bottom: 82px;
 }
-.button {
+/* .button {
   padding: 8px 16px;
-}
+} */
 /* .info-list {
   padding-top: 60px;
   padding-bottom: 60px;
