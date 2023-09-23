@@ -187,7 +187,7 @@ color: rgb(33, 150, 243);
   padding-bottom: 60px;
   gap: 70px;
 }
-.info .link-foot {
+.contact__address .address {
   color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -197,7 +197,7 @@ color: rgb(33, 150, 243);
   font-size: 14px;
   font-style: normal;
 }
-.info .link-footer {
+.contact__address .info__link {
   color: rgb(117, 117, 117);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
