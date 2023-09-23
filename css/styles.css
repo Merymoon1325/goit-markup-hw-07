@@ -767,11 +767,11 @@ height: 120px;
 position: relative;
 overflow: hidden;
 }
-.target__div:hover > .text-tarjeta {
+.target__div:hover > .target__text {
   top: 0%;
   cursor: pointer;
 } 
-.text-tarjeta {
+.target__text {
   display: flex;
 position: absolute;
 top:100%;
