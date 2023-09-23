@@ -763,11 +763,11 @@ height: 120px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.tarjeta-container {
+.target__div {
 position: relative;
 overflow: hidden;
 }
-.tarjeta-container:hover > .text-tarjeta {
+.target__div:hover > .text-tarjeta {
   top: 0%;
   cursor: pointer;
 } 
