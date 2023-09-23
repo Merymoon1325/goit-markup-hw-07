@@ -511,7 +511,7 @@ display: flex;
  font-style: normal;
  color: rgb(255, 255, 255);
 }
-.footer-item {
+.footer__text {
 font-family: "Roboto", sans-serif;
  font-size: 14px;
  font-style: normal;
