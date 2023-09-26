@@ -11,29 +11,32 @@
 }
 :root {
   --brand-color: rgb(33, 150, 243);
+  --secon-color: rgb(33, 33, 33);
+  --light-color: rgb(117, 117, 117);
+  --white-color: rgb(255, 255, 255);
 }
 .header__link {
   color: currentColor;
   text-decoration: none;
 }
 .header__items:hover .header-icon__email {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
 }
 .header__items:hover .header-icon__tel {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
 }
 .header__items:hover .header__link {
-  color: rgb(33, 150, 243);
+  color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__items:focus .header-icon__email {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
 }
 .header__items:focus .header-icon__tel {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
 }
 .header__items:focus .header__link {
-  color: rgb(33, 150, 243);
+  color: var(--brand-color);
 }
 .logo {
   color: var(--brand-color);
@@ -46,7 +49,7 @@
   font-style: normal;
 }
 .header-navegation__list .header-navegation__items .header-navegation__links {
-  color: rgb(33, 33, 33);
+  color: var(--secon-color);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 500;
@@ -58,7 +61,7 @@
 .header-navegation__list
   .header-navegation__items
   .header-navegation__links:hover {
-  color: rgb(33, 150, 243);
+  color: var(--brand-color);
 }
 /* .header-navegation__list {
   padding: 0;
@@ -66,7 +69,7 @@
   margin: 0px;
 } */
 .header__items {
-  color: rgb(117, 117, 117);
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.17;
@@ -98,7 +101,7 @@
 }
 
 .main__title {
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   line-height: 1.36;
@@ -111,8 +114,8 @@
   padding-right: 250px;
 }
 .mainbutton {
-  color: #ffffff;
-  background-color: rgb(33, 150, 243);
+  color: var(--white-color);
+  background-color: var(--brand-color);
   border: none;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -125,7 +128,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .subtitle {
-  color: rgb(33, 33, 33);
+  color: var(--secon-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.17;
@@ -134,7 +137,7 @@
   font-size: 14px;
 }
 .subtitle--gris {
-  color: rgb(117, 117, 117);
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -143,7 +146,7 @@
   line-height: 1.17;
 }
 .parrafo {
-  color: rgb(117, 117, 117);
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.71;
@@ -153,7 +156,7 @@
   padding-top: 10px;
 }
 .team__parrafo {
-  color: rgb(117, 117, 117);
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.71;
@@ -162,7 +165,7 @@
   text-align: center;
 }
 .title {
-  color: rgb(33, 33, 33);
+  color: var(--secon-color);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.17;
@@ -175,7 +178,7 @@
   padding-bottom: 44px;
 }
 .team__name {
-  color: rgb(33, 33, 33);
+  color: var(--secon-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.17;
@@ -185,14 +188,13 @@
   padding-bottom: 10px;
 }
 .contact__list {
-  background-color: #2f303a;
   list-style: none;
   padding-top: 60px;
   padding-bottom: 60px;
   gap: 70px;
 }
 .contact__address .address {
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 400;
@@ -202,7 +204,7 @@
   font-style: normal;
 }
 .contact__address .info__link {
-  color: rgb(117, 117, 117);
+  color: var(--light-color);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 400;
@@ -215,8 +217,8 @@
   font-family: "Roboto", sans-serif;
 }
 .menu__button {
-  color: rgb(33, 33, 33);
-  background-color: rgb(245, 244, 250);
+  color: var(--secon-color);
+  background-color: var(--white-color);
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -230,9 +232,9 @@
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #188ce8;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -242,21 +244,21 @@
   letter-spacing: 0.96px;
 }
 .menu__button--blue {
-  background-color: rgb(33, 150, 243);
-  color: rgb(255, 255, 255);
+  background-color: var(--brand-color);
+  color: var(--white-color);
 }
 .menu__button:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(33, 150, 243);
+  color: var(--white-color);
+  background-color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__button:focus {
-  color: rgb(255, 255, 255);
-  background-color: rgb(33, 150, 243);
+  color: var(--white-color);
+  background-color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .target__title {
-  color: rgb(33, 33, 33);
+  color: var(--secon-color);
   font-weight: 700;
   line-height: 2;
   font-size: 18px;
@@ -303,7 +305,7 @@
   height: 450px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-  background: #fff;
+  background: var(--white-color);
 }
 .team__list .team__item:hover {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -342,7 +344,7 @@
 .target__item {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid rgb(238, 238, 238);
-  background: rgb(255, 255, 255);
+  background: var(--white-color);
 }
 .target__item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
@@ -440,7 +442,7 @@
   height: 80px;
 } */
 .container-div {
-  background-color: rgb(47, 48, 58);
+  background-color: var(--secon-color);
 }
 .main__div {
   display: flex;
@@ -468,7 +470,7 @@
   padding-bottom: 94px;
 }
 .contact {
-  background-color: rgb(47, 48, 58);
+  background-color: var(--secon-color);
 }
 .redes__list {
   display: flex;
@@ -494,17 +496,17 @@
   padding-bottom: 60px;
 } */
 .header-navegation__links {
-  color: rgb(33, 150, 243);
+  color: var(--brand-color);
 }
 .header-icon__email {
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: var(--light-color);
 }
 .header-icon__tel {
   width: 10px;
   height: 16px;
-  fill: rgb(117, 117, 117);
+  fill: var(--light-color);
 }
 .footer {
   display: flex;
@@ -519,13 +521,13 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
 }
 .footer__text {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
 }
 .clientes {
   padding-bottom: 165px;
@@ -541,7 +543,7 @@
   list-style: none;
   text-align: center;
   align-items: center;
-  fill: rgb(175, 177, 184);
+  fill: var(--light-color);
 }
 .clientes__item:hover {
   fill: var(--brand-color);
@@ -618,17 +620,17 @@
   height: 44px;
   border-radius: 50%;
   cursor: pointer;
-  fill: rgb(175, 177, 184);
+  fill: var(--light-color);
 }
 .icons-links:hover {
-  fill: rgb(255, 255, 255);
-  background-color: rgb(33, 150, 243);
+  fill: var(--white-color);
+  background-color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-links:focus {
-  fill: rgb(255, 255, 255);
-  background-color: rgb(33, 150, 243);
+  fill: var(--white-color);
+  background-color: var(--brand-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -640,7 +642,7 @@
   height: 44px;
   border-radius: 50%;
   gap: 10px;
-  fill: rgb(255, 255, 255);
+  fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.102);
 }
 .icons-footer:hover {
@@ -673,7 +675,7 @@
   width: 520px;
   height: 580px;
   border-radius: 4px;
-  background: rgb(255, 255, 255);
+  background: var(--white-color);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -687,7 +689,7 @@
   border-color: rgba(0, 0, 0, 0.1);
 }
 .icon-modal:hover {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -702,7 +704,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 4px;
-  color: #757575;
+  color: var(--light-color);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -711,7 +713,7 @@
   letter-spacing: 0.12px;
 }
 .checkbox-text {
-  color: #757575;
+  color: var(--light-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -731,7 +733,7 @@
   margin-top: 30px;
 }
 .boletin__text {
-  color: #fff;
+  color: var(--white-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -760,7 +762,7 @@ height: 120px;
   background: rgba(47, 48, 58, 0.8);
   text-align: center;
   padding-top: 27px;
-  color: #fff;
+  color: var(--white-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -796,7 +798,7 @@ height: 120px;
   line-height: 28px;
   letter-spacing: 0.54px;
   background: rgba(33, 150, 243, 0.9);
-  color: #fff;
+  color: var(--white-color);
   transition: top 250ms ease;
 }
 .header-navegation__items {
@@ -809,7 +811,7 @@ height: 120px;
   content: "";
   width: 100%;
   height: 4px;
-  background-color: rgb(33, 150, 243);
+  background-color: var(--brand-color);
   cursor: auto;
   border-radius: 2px;
 }
@@ -829,10 +831,10 @@ height: 120px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--brand-color);
 }
 .subscribe__text {
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -883,15 +885,15 @@ height: 120px;
   outline: none;
 }
 .modal__input:focus {
-  border-color: #2196f3;
+  border-color: var(--brand-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus + .persona {
-  fill: #2196f3;
+  fill: var(--brand-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__area:focus {
-  border-color: #2196f3;
+  border-color: var(--brand-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__area:focus-visible {
@@ -913,7 +915,7 @@ height: 120px;
 }
 .modal_text {
   margin-bottom: 12px;
-  color: #212121;
+  color: var(--secon-color);
   text-align: center;
   font-family: Roboto;
   font-size: 20px;
@@ -944,7 +946,7 @@ letter-spacing: 0.42px;
 margin-top: 24px;
 } */
 .modal__label {
-  color: #757575;
+  color: var(--light-color);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -957,9 +959,9 @@ margin-top: 24px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--brand-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
@@ -991,14 +993,14 @@ margin-top: 24px;
   cursor: pointer;
 }
 .tmodal__terms:hover .checkbox-unchecked {
-  fill: rgb(33, 150, 243);
+  fill: var(--brand-color);
 }
 .checkbox-checked {
   width: 16px;
   height: 15px;
   position: absolute;
-  background-color: #2196f3;
-  fill: white;
+  background-color: var(--brand-color);
+  fill: var(--white-color);
   opacity: 0;
   visibility: hidden;
   margin-top: 15px;
@@ -1022,7 +1024,7 @@ margin-top: 24px;
   visibility: visible;
 }
 .modal__paragraph {
-  color: #757575;
+  color: var(--light-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
