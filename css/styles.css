@@ -344,9 +344,9 @@
   padding-top: 118px;
   padding-bottom: 50px;
 }
-.team__list.flex {
+/* .team__list.flex {
   padding-bottom: 94px;
-}
+} */
 .main-section .container {
   display: flex;
   flex-wrap: wrap;
