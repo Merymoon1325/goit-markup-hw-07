@@ -6,6 +6,13 @@
   display: flex;
   align-items: center;
 }
+.svg {
+  fill: currentColor;
+}
+.a {
+  color: currentColor;
+  text-decoration: none;
+}
 .header {
   @include flexjustify("center", "flex");
   gap: 150px;
@@ -70,7 +77,7 @@
     letter-spacing: 0.02em;
     @include flexalign("center", "flex");
     .header__link {
-      color: $light-color;
+      color: currentColor;
       text-decoration: none;
       &:hover {
         color: $brand-color;
@@ -82,7 +89,7 @@
       .header-icon__email {
         width: 16px;
         height: 12px;
-        fill: $light-color;
+        fill: currentColor;
         &:hover {
           fill: $brand-color;
         }
@@ -93,9 +100,9 @@
       .header-icon__tel {
         width: 10px;
         height: 16px;
-        fill: $light-color;
+        fill: currentColor;
         &:hover {
-          fill: $brand-color;
+          fill: currentColor;
         }
         &:focus {
           fill: $brand-color;
