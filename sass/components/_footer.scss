@@ -8,7 +8,6 @@
       list-style: none;
       padding-top: 60px;
       padding-bottom: 60px;
-      gap: 70px;
     }
     .contact__item {
       display: flex;
@@ -47,9 +46,10 @@
     .redes {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 0%;
     }
     .footer__text {
+      margin-top: 0%;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
       font-style: normal;
@@ -59,7 +59,7 @@
       display: flex;
       list-style: none;
       padding: 0px;
-      gap: 10px;
+      gap: 0px;
     }
     .redes__items {
       display: flex;
@@ -91,9 +91,10 @@
   .boletin {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .boletin__text {
+    margin-top: 0%;
     color: $white-color;
     font-family: Roboto;
     font-size: 14px;
