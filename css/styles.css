@@ -426,7 +426,6 @@
 }
 .container.foot {
   display: flex;
-  gap: 70px;
   align-items: center;
 }
 .redes__items {
@@ -721,6 +720,10 @@
   height: 50px;
   border-radius: 4px;
   background: var(--brand-color);
+}
+.contact__item {
+  display: flex;
+  padding-bottom: 15px;
 }
 .subscribe__text {
   color: var(--white-color);
