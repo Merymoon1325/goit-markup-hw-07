@@ -69,37 +69,37 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     @include flexalign("center", "flex");
-  }
-  .header__link {
-    color: $light-color;
-    text-decoration: none;
-    &:hover {
-      color: $brand-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:focus {
-      color: $brand-color;
-    }
-    .header-icon__email {
-      width: 16px;
-      height: 12px;
-      fill: $light-color;
+    .header__link {
+      color: $light-color;
+      text-decoration: none;
       &:hover {
-        fill: $brand-color;
+        color: $brand-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       &:focus {
-        fill: $brand-color;
+        color: $brand-color;
       }
-    }
-    .header-icon__tel {
-      width: 10px;
-      height: 16px;
-      fill: $light-color;
-      &:hover {
-        fill: $brand-color;
+      .header-icon__email {
+        width: 16px;
+        height: 12px;
+        fill: $light-color;
+        &:hover {
+          fill: $brand-color;
+        }
+        &:focus {
+          fill: $brand-color;
+        }
       }
-      &:focus {
-        fill: $brand-color;
+      .header-icon__tel {
+        width: 10px;
+        height: 16px;
+        fill: $light-color;
+        &:hover {
+          fill: $brand-color;
+        }
+        &:focus {
+          fill: $brand-color;
+        }
       }
     }
   }
